@@ -70,3 +70,48 @@ let arra=[1,2,3,4];
 
 let red=arra.reduce((res,el)=>(res+el));
 console.log(red);
+
+//////////////////////////reduce function to find maximum in an array
+console.log("finnding the maximum element in an Array");
+let max=arra.reduce((res,el)=>{
+    if(res<el){
+       return el;
+    }
+    else{
+        return res;
+    }
+})
+console.log(max);
+
+
+////////////////////////////Practice question 1 checking all numbers in an array are multiple of 10
+console.log("Checking whether all the elements in an array are multiple of 10");
+let multiple=[10,20,30,40,50,60];
+let check=multiple.every((el)=>{
+    return(el%10==0);
+})
+if(check){
+    console.log("all the elements in an array are multiple of 10")
+}
+else{
+    console.log("No! the elemnts in  the given array are not multiple of 10");
+}
+
+
+/////////////////PQ Finding the smalllest number in array
+console.log("Smalllest number in an array");
+let small=[2,3,4,5,9,1,7,0];
+let smallest=small.reduce((res,el)=>
+{
+    if(res<el){
+        return res;
+    }
+    else{
+        return el;
+    }
+})
+console.log(smallest);
+
+
+let maxi=[1,2,3,4,5,6,7,8,9];
+let str="apnacollege";
